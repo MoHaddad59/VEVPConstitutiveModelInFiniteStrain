@@ -1,0 +1,85 @@
+# Material Properties
+# ViscoElastic-ViscoPlastic in Finite Strain
+# Constitutive model develepped in "Murali et Doghri, 2018"
+#
+# Matrix phase (Isotropic) 
+3.163e9                             # E0
+0.39                                # Poisson's ratio
+48.e6                               # Yield stress
+# ViscoElastic properties
+4                                   # Number of ldi
+484.e6                              # ld1
+242.e6                              # ld2
+121.e6                              # ld3
+61.e6                               # ld4
+5488                                # l1
+54.8                                # l2
+0.54                                # l3
+0.05                                # l4
+#
+4                                   # Number of gmi
+2.7338e8                            # gm1
+1.36691e8                           # gm2
+6.83453e7                           # gm3
+3.45324e7                           # gm4
+9.73e3                              # g1
+9.73e1                              # g2
+9.73e-1                             # g3
+9.73e-2                             # g4
+# ViscoPlastic properties     
+1                                   # Yield function type: 1-Dracker-Prager
+1.e6                                # keq
+0.8                                 # kh
+3.5                                 # q  
+#
+1                                   # Hardening model: 1-Exponential law
+45.e6                               # Hardening modulus 1
+76                                  # Hardening exponent 
+0                                   # Hardening modulus 2
+#
+1                                   # VP potential type: 1-
+0.1                                 # ksi
+0.3                                 # Plastic Poisson's ratio
+#
+1                                   # VP function type: 1-
+1.9e5                               # pDot0
+293                                 # T
+155.e-6                             # A
+0.05                                # Alpha
+0.66                                # m
+#
+1                                   # Softening model: 1-
+107.e6                              # s0
+253.e6                              # s1
+197.e6                               # s2
+6700.e6                             # h1
+250.e6                              # h2
+0.054                               # ps
+0.3                                 # k
+#
+1                                   # Re-Hardening model: 1-
+22.5e6                                # CR
+1.9                                  # N
+#
+#
+# Homogenization
+OFF                                 # Homogenization
+MORI-TANAKA                         # Scheme
+ESH-ISO                             # Isotropization
+1                                   # Ratio dt/dt_res
+1                                   # Statistical moment
+# Loading
+MONOTONIC                           # History
+COMPRESSION                         # Compression OR Tension loading
+UNIAXIAL_1                         # Load
+1                                   # Triaxiality ratio
+1                                   # Number cycles
+# t=0
+0                                   # Stress at t=0
+0                                   # F at t=0
+# Time                      
+1.4e-4                              # Engineering strain rate
+0.8                                 # Final true strain
+5e4                                 # Number of time steps
+
+                          
